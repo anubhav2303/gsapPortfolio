@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="back">
+        <img id="model" src="Mask Group 2.png" alt="">
+        <div id="greyminimalbox"></div>
+        <div id="front">
+            <div id="nav">
+                <h3>Brandon <span id="light">Grotesque</span></h3>
+                <div id="links">
+                    <a href="#">Work</a>
+                    <a href="#">Clients</a>
+                    <img id="navmenuicon" src="icon.png" alt="">
+                </div>
+            </div>
+            <div id="main">
+                <div id="linenemail">
+                    <div id="line"></div>
+                    <h3>brandonshelp@help.com</h3>
+                </div>
+                <h1>brandon</h1>
+                <h1 id="yellow">grotesque</h1>
+                <div id="seemore">
+                    <h4>See more</h4>
+                    <div id="lightline"></div>
+                </div>
+            </div>
+            <div id="bottomOptions">
+                <div id="scroll">
+                    <div id="scrollLine"></div>
+                    <h4>Scroll More</h4>
+                </div>
+                <div id="btns">
+                    <div class="left">PREV</div>
+                    <div class="right">next</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+
+    <script>
+        var tl = new TimelineMax();
+
+        tl.fromTo('#model', 1.5, {
+            opacity: 0,
+            x: 200
+        }, {
+            opacity: 1,
+            x: 0,
+            ease: Expo.easeInOut
+        })
+        .fromTo('#nav', 2, {
+            y: -50,
+            opacity: 0
+        }, {
+            y: 0,
+            opacity: 1,
+            ease: Expo.easeInOut
+        }, '-=2')
+        .fromTo('#greyminimalbox', 2, {
+            y: 100
+        }, {
+            y: 0,
+            ease: Expo.easeInOut
+        }, '-=2')
+        .fromTo('#line', 2, {
+            width: 0
+        }, {
+            width: '100%',
+            ease: Expo.easeInOut
+        })
+        .fromTo('#lightline', 2, {
+            width: 0
+        }, {
+            width: '40%',
+            ease: Expo.easeInOut
+        }, '-=2')
+        .fromTo('#linenemail h3', 1, {
+            opacity: 0
+        }, {
+            opacity: 1,
+            ease: Expo.easeInOut
+        })
+        .fromTo('#seemore h4', 2, {
+            opacity: 0
+        }, {
+            opacity: 1,
+            ease: Expo.easeInOut
+        }, '-=2')
+        .fromTo('#main h1', 2, {
+            opacity: 0,
+            x: -100
+        }, {
+            opacity: 1,
+            x: 0,
+            ease: Expo.easeInOut
+        }, '-=2')
+        .fromTo('#bottomOptions', 4, {
+            opacity: 0,
+            y: 100
+        }, {
+            opacity: 1,
+            y: 0,
+            ease: Expo.easeInOut
+        }, '-=3')
+    </script>
+</body>
+</html>

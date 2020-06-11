@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Brandon Grotesque';
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#back{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+#model{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    height: 100%;
+}
+
+#greyminimalbox{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 40%;
+    height: 100px;
+    background-color: #333;
+}
+
+#front{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    color: rgb(255, 187, 0);
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+}
+
+#nav h3{
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#light{
+    font-weight: 400;
+}
+
+#links a{
+    margin-right: 30px;
+    color: rgb(255, 187, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+#navmenuicon{
+    width: 30px;
+}
+
+#main{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 37%;
+    height: 50%;
+    color: #fff;
+    /* background-color: rgba(255, 0, 0, 0.315); */
+}
+
+#linenemail{
+    width: 70%;
+    /* background-color: yellow; */
+}
+
+#line{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+#linenemail h3{
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 10px;
+    margin-top: 5px;
+    letter-spacing: 4px;
+    text-align: right;
+}
+
+#main > h1{
+    font-size: 130px;
+    line-height: 110px;
+}
+
+#yellow{
+    color: rgb(255, 187, 0);
+}
+
+#lightline{
+    width: 40%;
+    height: 1px;
+    background-color: #fff;
+}
+
+#seemore{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    /* height: 50px; */
+    margin-top: 70px;
+    margin-right: 50px;
+    /* background-color: red; */
+}
+
+#seemore h4{
+    color: cyan;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#bottomOptions{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 500px;
+    color: rgb(255, 187, 0);
+    height: 150px;
+    /* background-color: red; */
+}
+
+#scroll{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+
+#scrollLine{
+    width: 30px;
+    height: 2px;
+    margin-right: 20px;
+    background-color: #fff;
+}
+
+#btns{
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 70px;
+    /* background-color: green; */
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 10px;
+    width: 50%;
+    height: 100%;
+    color: #000;
+    background-color: rgb(255, 187, 0);
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 10px;
+    width: 50%;
+    height: 100%;
+    color: #000;
+    background-color: #fff;
+}
